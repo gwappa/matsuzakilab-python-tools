@@ -151,7 +151,7 @@ def is_DLC_output(
 ) -> bool:
     if filepath.suffix != DLC_OUTPUT_SUFFIX:
         return False
-    elif ('DLC_' not in filepath.name) or ('DeepLabCut_' not in filepath.name):
+    elif ('DLC_' not in filepath.name) and ('DeepLabCut_' not in filepath.name):
         return False
     elif ('shuffle' not in filepath.name):
         return False
@@ -215,6 +215,8 @@ def convert_recursive(
                         file=sys.stderr,
                         flush=True,
                     )
+            else:
+                pass
     _recurse_single(Path(directory))
 
 
