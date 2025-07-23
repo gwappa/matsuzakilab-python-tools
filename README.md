@@ -1,4 +1,6 @@
-# Matsuzakilab_PythonTools
+# Matsuzaki lab Python tools
+
+[![DOI](https://zenodo.org/badge/1024604455.svg)](https://doi.org/10.5281/zenodo.16350118)
 
 A set of python scripts for the ease of data transfer to MATLAB
 
