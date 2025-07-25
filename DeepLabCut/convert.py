@@ -217,7 +217,11 @@ def convert_recursive(
                     )
             else:
                 pass
-    _recurse_single(Path(directory))
+    if directory is None:
+        directory = Path()
+    else:
+        directory = Path(directory)
+    _recurse_single(directory)
 
 
 if __name__ == '__main__':
